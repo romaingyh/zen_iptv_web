@@ -7,7 +7,7 @@
     <h2>Rejoindre la Bêta de Zen IPTV</h2>
 
     <div class="w-fit flex flex-col items-center gap-2">
-        <p>Attention : vous devez avoir votre source IPTV utiliser l'application<br>
+        <p>Rejoignez la Bêta de Zen IPTV pour découvrir les nouveautés en avant-première.<br>
             Cliquez sur le bouton qui vous correspond pour rejoindre la bêta de Zen IPTV.
         </p>
         <div class="flex gap-4 w-full">

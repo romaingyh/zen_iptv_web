@@ -9,6 +9,10 @@
 
     export let title: string = 'Hello World';
     export let content: string = 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate?';
+
+    const arr = content.split(/\n|\r\n/g).map((v, _) => {
+        return {text: v, br: "<br>"}
+    })
 </script>
 
 <div class="accordion min-w-full">
@@ -28,7 +32,10 @@
 
     {#if isOpen}
         <div class="pl-12 pb-5 pr-5" transition:slide>
-            {content}
+            {#each arr as {text, br}}
+                {text}
+                {@html br}
+            {/each}
         </div>
     {/if}
 </div>
