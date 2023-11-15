@@ -3,7 +3,6 @@
     import LandingSection from "./lib/sections/LandingSection.svelte";
     import FeaturesSection from "./lib/sections/FeaturesSection.svelte";
     import FaqSection from "./lib/sections/FaqSection.svelte";
-    import JoinBetaSection from "./lib/sections/JoinBetaSection.svelte";
 </script>
 
 <main>
@@ -11,5 +10,5 @@
     <LandingSection/>
     <FeaturesSection/>
     <FaqSection/>
-    <JoinBetaSection/>
+    <!--<JoinBetaSection/>-->
 </main>
