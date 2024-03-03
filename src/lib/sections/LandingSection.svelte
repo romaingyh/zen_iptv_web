@@ -55,7 +55,7 @@
 
     <div class="px-8 md:px-12 lg:px-36 flex flex-wrap justify-center gap-4 md:gap-12">
         <PlatformText src="/icons/android.svg" text="Android / Android TV"/>
-        <PlatformText src="/icons/apple.svg" text="iOS iPadOS macOS"/>
+        <PlatformText src="/icons/apple.svg" text="iOS iPadOS macOS tvOS"/>
         <!--<PlatformText src="/icons/windows.svg" text="Windows"/>-->
     </div>
 </div>
