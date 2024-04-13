@@ -10,5 +10,4 @@
     <LandingSection/>
     <FeaturesSection/>
     <FaqSection/>
-    <!--<JoinBetaSection/>-->
 </main>
