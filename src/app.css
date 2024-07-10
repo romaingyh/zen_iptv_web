@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Golos Text';
+        src: local('GolosText'), local('golostext'), url('/fonts/GolosText/GolosText-Regular.ttf') format('ttf');
+        font-weight: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Golos Text';
+        src: local('GolosText'), local('golostext'), url('/fonts/GolosText/GolosText-Medium.ttf') format('ttf');
+        font-weight: 500;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Golos Text';
+        src: local('GolosText'), local('golostext'), url('/fonts/GolosText/GolosText-SemiBold.ttf') format('ttf');
+        font-weight: 600;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Golos Text';
+        src: local('GolosText'), local('golostext'), url('/fonts/GolosText/GolosText-Bold.ttf') format('ttf');
+        font-weight: bold;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Golos Text';
+        src: local('GolosText'), local('golostext'), url('/fonts/GolosText/GolosText-ExtraBold.ttf') format('ttf');
+        font-weight: 800;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Golos Text';
+        src: local('GolosText'), local('golostext'), url('/fonts/GolosText/GolosText-Black.ttf') format('ttf');
+        font-weight: 900;
+        font-display: swap;
+    }
+}
+
+:root {
+    font-family: 'Golos Text', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    color-scheme: light;
+    color: #111111;
+    background-color: #ffffff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+#app {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold
+}
+
+h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold
+}
+
+h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold
+}
+
+h4 {
+    @apply text-xl md:text-2xl lg:text-3xl font-bold
+}
+
+h5 {
+    @apply text-lg md:text-xl lg:text-2xl font-bold
+}
+
+p {
+    @apply text-base md:text-lg text-gray-400
+}
