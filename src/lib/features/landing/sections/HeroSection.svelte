@@ -27,7 +27,7 @@
 
 		<div class="flex-1">
 			<FilledButton fullWidth fullHeight href="https://zeniptv.app/releases/zeniptv_fireos.apk">
-				Télécharger le .apk
+				Télécharger l'APK
 			</FilledButton>
 		</div>
 	</div>

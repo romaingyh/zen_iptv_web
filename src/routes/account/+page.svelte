@@ -23,7 +23,7 @@
 	}
 </script>
 
-<div class="w-full max-w-3xl mx-auto">
+<div class="w-full max-w-3xl mx-auto p-8">
 	<!-- User Profile Section -->
 	<section class="space-y-4">
 		<h4 class="text-2xl font-bold mb-4">Informations</h4>
