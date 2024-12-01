@@ -1,14 +1,11 @@
 
 <script>
-	import '../app.css';
-	import Navbar from '$lib/components/Navbar.svelte';
-	import LandingSection from '$lib/sections/LandingSection.svelte';
-	import FeaturesSection from '$lib/sections/FeaturesSection.svelte';
-	import FaqSection from '$lib/sections/FaqSection.svelte';
+	import LandingSection from '$lib/features/landing/sections/HeroSection.svelte';
+	import FeaturesSection from '$lib/features/landing/sections/FeaturesSection.svelte';
+	import FaqSection from '$lib/features/landing/sections/FaqSection.svelte';
 </script>
 
 <main>
-	<Navbar/>
 	<LandingSection/>
 	<FeaturesSection/>
 	<FaqSection/>

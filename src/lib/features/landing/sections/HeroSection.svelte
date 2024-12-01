@@ -1,9 +1,10 @@
 <script>
     import PlatformText from "../components/PlatformText.svelte";
     import Marquee from "../components/Marquee.svelte";
+    import Section from '$lib/features/landing/components/PageSection.svelte';
 </script>
 
-<div class="min-w-full flex flex-col items-center gap-8 md:gap-12 py-8 md:py-12 lg:py-20" id="landing">
+<Section id="landing">
     <h1 class="px-8 md:px-12 lg:px-36 w-full text-center text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
         Tous vos contenus,<br>
         sur tous vos appareils.
@@ -58,4 +59,4 @@
         <PlatformText src="/icons/apple.svg" text="iOS iPadOS macOS tvOS"/>
         <!--<PlatformText src="/icons/windows.svg" text="Windows"/>-->
     </div>
-</div>
+</Section>

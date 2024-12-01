@@ -1,7 +1,7 @@
 <script>
-    import Section from "./Section.svelte";
-    import HorizontalDivider from "../components/HorizontalDivider.svelte";
-    import FaqItem from "../components/FaqItem.svelte";
+    import Section from "../components/PageSection.svelte";
+    import HorizontalDivider from "../../../shared/components/HorizontalDivider.svelte";
+    import FaqItem from "../components/FaqTile.svelte";
 </script>
 
 <Section id="faq">

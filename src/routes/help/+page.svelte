@@ -1,12 +1,4 @@
-<script>
-	import '../../app.css';
-
-	import Navbar from '$lib/components/Navbar.svelte';
-</script>
-
 <main>
-	<Navbar />
-
 	<div class="min-w-full flex flex-col items-center gap-8 p-8
 							md:gap-12 md:p-12
 							lg:px-36 lg:py-20">
@@ -26,11 +18,13 @@
 			</iframe>
 
 			<p>
-				Le serveur discord de la communauté est l'endroit idéal. Posez vos questions aux utilisateurs ainsi que le développeur directement.
+				Le serveur discord de la communauté est l'endroit idéal. Posez vos questions aux utilisateurs ainsi que le
+				développeur directement.
 				<br> <br>
 				Retrouvez également les questions les plus fréquentes ainsi que les dernières informations sur les mises à jour.
 				<br><br>
-				Pour rejoindre le serveur, cliquez sur le lien suivant : <a href="https://discord.gg/sEdvRbcFcA" class="text-primary">discord.gg/zeniptv</a>
+				Pour rejoindre le serveur, cliquez sur le lien suivant : <a href="https://discord.gg/sEdvRbcFcA"
+																																		class="text-primary">discord.gg/zeniptv</a>
 				<br><br>
 				Pour des problèmes plus personnels, vous pouvez me contacter directement par mail à l'adresse suivante :
 				<a href="mailto:support@zeniptv.app" class="text-primary">support(arobase)zeniptv.app</a>
