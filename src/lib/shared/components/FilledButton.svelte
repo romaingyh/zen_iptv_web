@@ -11,6 +11,7 @@
 
 	// Optional props for both
 	export let fullWidth: boolean = false;
+	export let fullHeight: boolean = false;
 
 	// Common styles for all variants
 	const baseStyles =
@@ -25,14 +26,15 @@
 
 	const disabledStyles = 'opacity-50 cursor-not-allowed';
 	const widthStyles = fullWidth ? 'w-full' : 'w-fit';
-	$: className = `${baseStyles} ${variants[variant]} ${disabled ? disabledStyles : ''} ${widthStyles}`;
+	const heightStyles = fullHeight ? 'h-full' : 'h-fit';
+	$: className = `${baseStyles} ${variants[variant]} ${disabled ? disabledStyles : ''} ${widthStyles} ${heightStyles}`;
 </script>
 
 {#if href}
 	<a
 		{href}
 		{target}
-		class="{className} inline-block"
+		class="{className} flex items-center justify-center"
 		on:click
 		on:focus
 		on:mouseenter
