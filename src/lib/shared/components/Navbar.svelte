@@ -20,7 +20,7 @@
 		{#if session}
 			<FilledButton href="/account" variant="ghost">Mon Compte</FilledButton>
 		{:else}
-			<FilledButton href="/login">Connexion</FilledButton>
+			<FilledButton href="/auth">Connexion</FilledButton>
 		{/if}
 	</div>
 </nav>

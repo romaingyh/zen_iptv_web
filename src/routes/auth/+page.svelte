@@ -1,4 +1,4 @@
-<!-- src/routes/login/+page.svelte -->
+<!-- src/routes/auth/+page.svelte -->
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import FilledButton from '$lib/shared/components/FilledButton.svelte';
@@ -6,6 +6,8 @@
 
 	export let data;
 	export let form: ActionData;
+
+	console.log(`${data.url}/auth/callback`);
 
 	const { supabase } = data;
 	let loading = false;
@@ -90,7 +92,8 @@
 
 		<div class="space-y-4">
 			<button
-				on:click={() => handleSocialLogin('google')}
+				type="button"
+				on:click|preventDefault={() => handleSocialLogin('google')}
 				class="w-full border border-gray-300 rounded-lg px-4 py-2 flex items-center justify-center gap-3 hover:bg-gray-50"
 			>
 				<img src="/icons/google.svg" alt="Google" class="w-5 h-5" />
@@ -98,6 +101,7 @@
 			</button>
 
 			<button
+				type="button"
 				on:click={() => handleSocialLogin('apple')}
 				class="w-full border border-gray-300 rounded-lg px-4 py-2 flex items-center justify-center gap-3 hover:bg-gray-50"
 			>
