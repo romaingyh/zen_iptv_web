@@ -38,7 +38,6 @@
 	"type": "module",
 	"dependencies": {
 		"@supabase/ssr": "^0.5.2",
-		"@supabase/supabase-js": "^2.46.2",
-		"@sveltejs/adapter-static": "^3.0.1"
+		"@supabase/supabase-js": "^2.46.2"
 	}
 }
