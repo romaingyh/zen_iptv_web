@@ -22,8 +22,6 @@ export const POST: RequestHandler = async ({ request }) => {
 	try {
 		const event = stripe.webhooks.constructEvent(body, signature, STRIPE_WEBHOOK_SECRET);
 
-		console.log('Received Stripe event:', event.type);
-
 		switch (event.type) {
 			case 'checkout.session.completed': {
 				const session = event.data.object;
@@ -82,8 +80,6 @@ async function notifyRevenueCat(
 			attributes: customerAttributes
 		})
 	});
-
-	console.log(response);
 
 	if (!response.ok) {
 		console.error('Failed to notify RevenueCat', response);

@@ -16,7 +16,6 @@ export const load: PageServerLoad = async ({ locals: { safeGetSession } }) => {
 		const userId = user.id;
 
 		const subscriberResponse = await fetchRevenueCatSubscriber(userId);
-		console.log(subscriberResponse.subscriber);
 		const subscription = extractActiveSubscription(subscriberResponse.subscriber);
 
 		return {

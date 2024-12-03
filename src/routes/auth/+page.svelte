@@ -7,8 +7,6 @@
 	export let data;
 	export let form: ActionData;
 
-	console.log(`${data.url}/auth/callback`);
-
 	const { supabase } = data;
 	let loading = false;
 
