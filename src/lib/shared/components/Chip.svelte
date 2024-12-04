@@ -1,5 +1,4 @@
 <script lang="ts">
-	export let label: string;
 	export let color: 'green' | 'red' | 'amber';
 
 	const colors = {
@@ -12,5 +11,5 @@
 </script>
 
 <span class="px-2 py-1 rounded-full text-sm {colorClass}">
-	{label}
+	<slot />
 </span>

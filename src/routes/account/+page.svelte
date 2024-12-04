@@ -6,6 +6,7 @@
 		PUBLIC_STRIPE_PUBLISHABLE_KEY
 	} from '$env/static/public';
 	import SubscriptionInfos from '$lib/features/account/components/SubscriptionInfos.svelte';
+	import Chip from '$lib/shared/components/Chip.svelte';
 	import FilledButton from '$lib/shared/components/FilledButton.svelte';
 	import HorizontalDivider from '$lib/shared/components/HorizontalDivider.svelte';
 	import type { PageData } from './$types';
@@ -58,6 +59,12 @@
 		{#if subscription}
 			<SubscriptionInfos {subscription} />
 		{:else}
+			<Chip color="amber">
+				Black Friday: Utilisez le code BF2024 pour obtenir l'achat à vie à 14.99€
+			</Chip>
+
+			<div class="mb-4" />
+
 			<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 			<stripe-pricing-table
 				pricing-table-id={PUBLIC_STRIPE_PRICING_TABLE_ID}

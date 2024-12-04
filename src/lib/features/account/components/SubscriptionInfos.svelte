@@ -11,16 +11,15 @@
 		<p class="text-sm text-gray-500">Plan</p>
 		<p class="text-lg">{subscription.displayName}</p>
 		{#if subscription.periodType === 'trial'}
-			<Chip label="Essai gratuit" color="amber" />
+			<Chip color="amber">Essai gratuit</Chip>
 		{/if}
 	</div>
 
 	<div>
 		<p class="text-sm text-gray-500">Status</p>
-		<Chip
-			label={subscription.status.charAt(0).toUpperCase() + subscription.status.slice(1)}
-			color={subscription.status === 'active' ? 'green' : 'red'}
-		/>
+		<Chip color={subscription.status === 'active' ? 'green' : 'red'}>
+			{subscription.status.charAt(0).toUpperCase() + subscription.status.slice(1)}
+		</Chip>
 	</div>
 
 	<div>
