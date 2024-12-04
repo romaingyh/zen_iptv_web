@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "package_name": "app.zeniptv.mobile",
+      "namespace": "android_app",
+      "sha256_cert_fingerprints": [
+        "A0:16:C3:F9:B1:30:5B:34:1D:A3:2C:14:06:54:60:D3:86:CE:E2:28:91:B6:CE:3C:82:43:04:B8:42:A1:5D:48",
+        "00:9D:14:C9:A6:2D:B9:79:84:6D:70:55:75:C1:9D:68:4D:EF:C8:5D:8A:F4:E1:FA:A5:54:70:48:8F:4A:9A:04"
+      ]
+    }
+  }
+]
