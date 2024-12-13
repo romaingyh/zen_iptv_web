@@ -41,6 +41,10 @@
 				<a href="mailto:support@zeniptv.app" class="text-primary">support(arobase)zeniptv.app</a>
 				<br />
 				Le support technique se fait sur discord et non via cette adresse email.
+				<br /><br />
+				Pour supprimer votre compte et toutes les données associées, utilisez le bouton rouge "Supprimer
+				mon compte" sur la page compte de l'application ou faîtes en la demande sur le serveur discord,
+				salon "Support".
 			</p>
 		</div>
 	</div>
