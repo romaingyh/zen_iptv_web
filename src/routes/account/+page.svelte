@@ -48,7 +48,7 @@
 
 	<!-- Subscription Section -->
 	<section class="space-y-4">
-		<h4 class="text-2xl font-bold">Abonnement</h4>
+		<h4 class="text-2xl font-bold mb-4">Abonnement</h4>
 
 		{#if error}
 			<div class="text-red-600 p-4 bg-red-50 rounded-lg">
@@ -61,10 +61,6 @@
 		{/if}
 
 		{#if !subscription || subscription.status === 'canceled'}
-			<Chip color="amber">
-				Black Friday: Utilisez le code BF2024 pour obtenir l'achat à vie à 14.99€
-			</Chip>
-
 			<div class="mb-4" />
 
 			<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
