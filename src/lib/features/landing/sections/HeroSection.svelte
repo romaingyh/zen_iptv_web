@@ -25,11 +25,16 @@
 			/>
 		</a>
 
-		<div class="flex-1">
-			<FilledButton fullWidth fullHeight href="https://zeniptv.app/releases/zeniptv_fireos.apk">
-				Télécharger l'APK
-			</FilledButton>
-		</div>
+		<a
+			class="flex-1"
+			href="http://play.google.com/store/apps/details?id=app.zeniptv.mobile&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+		>
+			<img
+				alt="Disponible sur Google Play"
+				class="w-full h-full"
+				src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
+			/>
+		</a>
 	</div>
 
 	<div class="px-8 md:px-12 lg:px-36 hidden lg:block lg:relative w-[800px] h-[500px]">
