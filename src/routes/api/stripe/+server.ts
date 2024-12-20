@@ -3,10 +3,15 @@
 import {
 	REVENUECAT_STRIPE_API_KEY,
 	STRIPE_SECRET_KEY,
-	STRIPE_WEBHOOK_SECRET
+	STRIPE_WEBHOOK_SECRET,
+	SUPABASE_SERVICE_ROLE_KEY
 } from '$env/static/private';
-import { error } from '@sveltejs/kit';
+import { PUBLIC_SUPABASE_URL } from '$env/static/public';
+
 import Stripe from 'stripe';
+
+import { error } from '@sveltejs/kit';
+
 import type { RequestHandler } from './$types';
 
 const stripe = new Stripe(STRIPE_SECRET_KEY);
@@ -29,12 +34,24 @@ export const POST: RequestHandler = async ({ request }) => {
 
 				const interval = lineItems.data[0].price?.recurring?.interval ?? 'lifetime';
 
-				const clientReferenceId = session.client_reference_id as string;
-				const customerId = session.customer;
+				let clientReferenceId = session.client_reference_id;
 
 				if (!clientReferenceId) {
-					throw error(400, 'Missing client_reference_id');
+					const customerEmail = session.customer_details?.email;
+					if (!customerEmail) {
+						throw error(400, 'No client_reference_id or customer email');
+					}
+
+					const userId = await findUserByEmail(customerEmail);
+
+					if (!userId) {
+						throw error(400, 'No user found');
+					}
+
+					clientReferenceId = userId;
 				}
+
+				const customerId = session.customer;
 
 				await notifyRevenueCat(session.id, clientReferenceId, {
 					stripe_session_id: session.id,
@@ -52,6 +69,27 @@ export const POST: RequestHandler = async ({ request }) => {
 		throw error(400, 'Webhook Error');
 	}
 };
+
+async function findUserByEmail(email: string): Promise<string | null> {
+	let response = await fetch(`${PUBLIC_SUPABASE_URL}/rest/v1/rpc/get_user_id_by_email`, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+			apikey: SUPABASE_SERVICE_ROLE_KEY,
+			Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`
+		},
+		body: JSON.stringify({ user_email: email })
+	});
+
+	if (!response.ok) {
+		console.error('Failed fetch user by email', response);
+		throw new Error('Failed to fetch user by email');
+	}
+
+	const data = await response.json();
+
+	return data;
+}
 
 async function notifyRevenueCat(
 	fetchToken: string,
