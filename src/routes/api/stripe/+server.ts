@@ -71,7 +71,7 @@ export const POST: RequestHandler = async ({ request }) => {
 };
 
 async function findUserByEmail(email: string): Promise<string | null> {
-	let response = await fetch(`${PUBLIC_SUPABASE_URL}/rest/v1/rpc/get_user_id_by_email`, {
+	const response = await fetch(`${PUBLIC_SUPABASE_URL}/rest/v1/rpc/get_user_id_by_email`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
