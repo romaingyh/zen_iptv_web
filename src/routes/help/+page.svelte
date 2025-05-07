@@ -34,7 +34,7 @@
 				les mises à jour.
 				<br /><br />
 				Pour rejoindre le serveur, cliquez sur le lien suivant :
-				<a href="https://discord.gg/sEdvRbcFcA" class="text-primary">discord.gg/zeniptv</a>
+				<a href="https://discord.gg/sEdvRbcFcA" class="text-primary">discord.gg/zeniptv-player</a>
 				<br /><br />
 				Pour des demandes professionnelles ou légales, vous pouvez me contacter directement par mail
 				à l'adresse suivante :
