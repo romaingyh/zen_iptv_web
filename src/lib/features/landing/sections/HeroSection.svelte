@@ -1,6 +1,5 @@
 <script>
 	import Section from '$lib/features/landing/components/PageSection.svelte';
-	import FilledButton from '$lib/shared/components/FilledButton.svelte';
 	import Marquee from '../components/Marquee.svelte';
 	import PlatformText from '../components/PlatformText.svelte';
 </script>
@@ -69,6 +68,6 @@
 	<div class="px-8 md:px-12 lg:px-36 flex flex-wrap justify-center gap-4 md:gap-12">
 		<PlatformText src="/icons/android.svg" text="Android / Android TV" />
 		<PlatformText src="/icons/apple.svg" text="iOS iPadOS macOS tvOS" />
-		<!--<PlatformText src="/icons/windows.svg" text="Windows"/>-->
+		<PlatformText src="/icons/windows.svg" text="Windows"/>
 	</div>
 </Section>

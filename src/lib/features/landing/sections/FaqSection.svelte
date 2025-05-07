@@ -19,13 +19,14 @@
         <HorizontalDivider/>
 
         <FaqItem
-                content="Voici les plateformes sur lequelles vous pouvez télécharger Zen IPTV :
+                content="Voici les plateformes sur les quelles vous pouvez télécharger Zen IPTV :
                 - iOS (App Store), iPadOS (App Store), macOS (App Store), tvOS (App Store)
                 - Android (Play Store) et Android TV (Play Store)
                 - FireStick, https://zeniptv.app/releases/zeniptv_fireos.apk
+                - Windows (Windows Store)
 
                 Ces plateformes ne sont pas supportées pour le moment :
-                - Windows, Linux, Tizen OS, Web OS, pas de date prévue"
+                - Linux, Tizen OS, Web OS, pas de date prévue"
 
                 title="Quels appareils sont compatibles ?"/>
 
