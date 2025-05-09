@@ -58,7 +58,7 @@
 					type="email"
 					value={form?.email ?? ''}
 					required
-					class="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+					class="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs focus:border-primary focus:outline-hidden focus:ring-1 focus:ring-primary"
 				/>
 			</div>
 
@@ -70,7 +70,7 @@
 					name="password"
 					type="password"
 					required
-					class="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+					class="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs focus:border-primary focus:outline-hidden focus:ring-1 focus:ring-primary"
 				/>
 			</div>
 

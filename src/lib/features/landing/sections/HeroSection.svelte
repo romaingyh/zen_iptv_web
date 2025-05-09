@@ -6,7 +6,7 @@
 
 <Section id="landing">
 	<h1
-		class="px-8 md:px-12 lg:px-36 w-full text-center text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary"
+		class="px-8 md:px-12 lg:px-36 w-full text-center text-transparent bg-clip-text bg-linear-to-r from-secondary to-primary"
 	>
 		Tous vos contenus,<br />
 		sur tous vos appareils.

@@ -5,7 +5,7 @@
 							lg:px-36 lg:py-20"
 	>
 		<h2
-			class="px-8 py-2 w-full text-center text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary
+			class="px-8 py-2 w-full text-center text-transparent bg-clip-text bg-linear-to-r from-secondary to-primary
 							md:px-12
 							lg:px-36"
 		>

@@ -1,7 +1,7 @@
 <script>
-    import Section from "../components/PageSection.svelte";
     import HorizontalDivider from "../../../shared/components/HorizontalDivider.svelte";
     import FaqItem from "../components/FaqTile.svelte";
+    import Section from "../components/PageSection.svelte";
 </script>
 
 <Section id="faq">
@@ -37,10 +37,7 @@
                 title="Est-ce que l'application est gratuite ?"/>
 
         <HorizontalDivider/>
-
-
-        <div class="w-full h-[1px] bg-black opacity-5"/>
-
+        
         <FaqItem
                 content="Actuellement Zen IPTV prend en charge les playlistes Xtream et M3U. Les deux fonctionnent mais l'affichage est optimisé pour les playlistes  Xtream dont les films et séries ont un identifiant TMDB."
                 title="Quelles sont les formats de playlist supportés ?"/>
