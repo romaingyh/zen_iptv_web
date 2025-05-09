@@ -57,11 +57,11 @@
 	<div class="w-full lg:hidden">
 		<Marquee speed={40}>
 			<img alt="Serie iPhone" class="h-[400px] rounded-xl" src="/images/serie.webp" />
-			<div class="w-6" />
+			<div class="w-6"></div>
 			<img alt="Home large" class="h-[400px] rounded-xl" src="/images/large_home.webp" />
-			<div class="w-6" />
+			<div class="w-6"></div>
 			<img alt="Home iPhone" class="h-[400px] rounded-xl" src="/images/movies.webp" />
-			<div class="w-6" />
+			<div class="w-6"></div>
 		</Marquee>
 	</div>
 
