@@ -24,10 +24,10 @@
 	}
 </script>
 
-<div class="w-full max-w-3xl mx-auto p-8">
+<div class="mx-auto w-full max-w-3xl p-8">
 	<!-- User Profile Section -->
 	<section class="space-y-4">
-		<h4 class="text-2xl font-bold mb-4">Informations</h4>
+		<h4 class="mb-4 text-2xl font-bold">Informations</h4>
 
 		<div>
 			<p class="text-sm text-gray-500">Email</p>
@@ -48,10 +48,10 @@
 
 	<!-- Subscription Section -->
 	<section class="space-y-4">
-		<h4 class="text-2xl font-bold mb-4">Abonnement</h4>
+		<h4 class="mb-4 text-2xl font-bold">Abonnement</h4>
 
 		{#if error}
-			<div class="text-red-600 p-4 bg-red-50 rounded-lg">
+			<div class="rounded-lg bg-red-50 p-4 text-red-600">
 				{error}
 			</div>
 		{/if}

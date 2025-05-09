@@ -33,7 +33,7 @@
 	}
 </script>
 
-<div class="min-h-[calc(100vh-5rem)] flex items-center justify-center p-8">
+<div class="flex min-h-[calc(100vh-5rem)] items-center justify-center p-8">
 	<div class="w-full max-w-md space-y-8">
 		<div>
 			<h2 class="text-3xl font-bold">Connexion Zen IPTV</h2>
@@ -43,7 +43,7 @@
 		</div>
 
 		{#if form?.error}
-			<div class="bg-red-50 text-red-600 p-4 rounded-lg text-center">
+			<div class="rounded-lg bg-red-50 p-4 text-center text-red-600">
 				{form.error}
 			</div>
 		{/if}
@@ -58,7 +58,7 @@
 					type="email"
 					value={form?.email ?? ''}
 					required
-					class="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs focus:border-primary focus:outline-hidden focus:ring-1 focus:ring-primary"
+					class="focus:border-primary focus:ring-primary mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs focus:ring-1 focus:outline-hidden"
 				/>
 			</div>
 
@@ -70,7 +70,7 @@
 					name="password"
 					type="password"
 					required
-					class="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs focus:border-primary focus:outline-hidden focus:ring-1 focus:ring-primary"
+					class="focus:border-primary focus:ring-primary mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs focus:ring-1 focus:outline-hidden"
 				/>
 			</div>
 
@@ -92,18 +92,18 @@
 			<button
 				type="button"
 				on:click|preventDefault={() => handleSocialLogin('google')}
-				class="w-full border border-gray-300 rounded-lg px-4 py-2 flex items-center justify-center gap-3 hover:bg-gray-50"
+				class="flex w-full items-center justify-center gap-3 rounded-lg border border-gray-300 px-4 py-2 hover:bg-gray-50"
 			>
-				<img src="/icons/google.svg" alt="Google" class="w-5 h-5" />
+				<img src="/icons/google.svg" alt="Google" class="h-5 w-5" />
 				Sign in with Google
 			</button>
 
 			<button
 				type="button"
 				on:click={() => handleSocialLogin('apple')}
-				class="w-full border border-gray-300 rounded-lg px-4 py-2 flex items-center justify-center gap-3 hover:bg-gray-50"
+				class="flex w-full items-center justify-center gap-3 rounded-lg border border-gray-300 px-4 py-2 hover:bg-gray-50"
 			>
-				<img src="/icons/apple.svg" alt="Apple" class="w-5 h-5" />
+				<img src="/icons/apple.svg" alt="Apple" class="h-5 w-5" />
 				Sign in with Apple
 			</button>
 		</div>

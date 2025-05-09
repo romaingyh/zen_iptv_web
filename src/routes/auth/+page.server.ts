@@ -14,7 +14,6 @@ export const load: PageServerLoad = async ({ url, locals: { safeGetSession } }) 
 };
 
 export const actions: Actions = {
-
 	login: async ({ request, locals: { supabase } }) => {
 		const formData = await request.formData();
 		const email = formData.get('email') as string;

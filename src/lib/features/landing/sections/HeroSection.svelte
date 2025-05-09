@@ -6,20 +6,20 @@
 
 <Section id="landing">
 	<h1
-		class="px-8 md:px-12 lg:px-36 w-full text-center text-transparent bg-clip-text bg-linear-to-r from-secondary to-primary"
+		class="from-secondary to-primary w-full bg-linear-to-r bg-clip-text px-8 text-center text-transparent md:px-12 lg:px-36"
 	>
 		Tous vos contenus,<br />
 		sur tous vos appareils.
 	</h1>
 
-	<div class="w-full max-w-md flex gap-4 text-center text-white">
+	<div class="flex w-full max-w-md gap-4 text-center text-white">
 		<a
 			class="flex-1"
 			href="https://apps.apple.com/fr/app/zen-iptv/id6458223193?itsct=apps_box_badge&amp;itscg=30200"
 		>
 			<img
 				alt="Download on the App Store"
-				class="w-full h-full"
+				class="h-full w-full"
 				src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83&amp;releaseDate=1668124800"
 			/>
 		</a>
@@ -30,16 +30,16 @@
 		>
 			<img
 				alt="Disponible sur Google Play"
-				class="w-full h-full"
+				class="h-full w-full"
 				src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
 			/>
 		</a>
 	</div>
 
-	<div class="px-8 md:px-12 lg:px-36 hidden lg:block lg:relative w-[800px] h-[500px]">
+	<div class="hidden h-[500px] w-[800px] px-8 md:px-12 lg:relative lg:block lg:px-36">
 		<img
 			alt="Home large"
-			class="absolute top-0 left-0 right-0 m-auto w-3/4 rounded-xl shadow-2xl"
+			class="absolute top-0 right-0 left-0 m-auto w-3/4 rounded-xl shadow-2xl"
 			src="/images/large_home.webp"
 		/>
 		<img
@@ -49,7 +49,7 @@
 		/>
 		<img
 			alt="Home iPhone"
-			class="absolute bottom-0 right-0 h-3/4 rounded-xl shadow-2xl"
+			class="absolute right-0 bottom-0 h-3/4 rounded-xl shadow-2xl"
 			src="/images/movies.webp"
 		/>
 	</div>
@@ -65,9 +65,9 @@
 		</Marquee>
 	</div>
 
-	<div class="px-8 md:px-12 lg:px-36 flex flex-wrap justify-center gap-4 md:gap-12">
+	<div class="flex flex-wrap justify-center gap-4 px-8 md:gap-12 md:px-12 lg:px-36">
 		<PlatformText src="/icons/android.svg" text="Android / Android TV" />
 		<PlatformText src="/icons/apple.svg" text="iOS iPadOS macOS tvOS" />
-		<PlatformText src="/icons/windows.svg" text="Windows"/>
+		<PlatformText src="/icons/windows.svg" text="Windows" />
 	</div>
 </Section>

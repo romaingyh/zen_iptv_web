@@ -10,6 +10,6 @@
 	const colorClass = colors[color];
 </script>
 
-<span class="px-2 py-1 rounded-full text-sm {colorClass}">
+<span class="rounded-full px-2 py-1 text-sm {colorClass}">
 	<slot />
 </span>

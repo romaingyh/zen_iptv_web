@@ -1,11 +1,11 @@
 <main>
 	<div
-		class="min-w-full flex flex-col items-center gap-8 p-8
+		class="flex min-w-full flex-col items-center gap-8 p-8
 							md:gap-12 md:p-12
 							lg:px-36 lg:py-20"
 	>
 		<h2
-			class="px-8 py-2 w-full text-center text-transparent bg-clip-text bg-linear-to-r from-secondary to-primary
+			class="from-secondary to-primary w-full bg-linear-to-r bg-clip-text px-8 py-2 text-center text-transparent
 							md:px-12
 							lg:px-36"
 		>

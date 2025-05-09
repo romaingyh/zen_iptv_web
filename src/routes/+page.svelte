@@ -1,4 +1,3 @@
-
 <script>
 	import LandingSection from '$lib/features/landing/sections/HeroSection.svelte';
 	import FeaturesSection from '$lib/features/landing/sections/FeaturesSection.svelte';
@@ -6,7 +5,7 @@
 </script>
 
 <main>
-	<LandingSection/>
-	<FeaturesSection/>
-	<FaqSection/>
+	<LandingSection />
+	<FeaturesSection />
+	<FaqSection />
 </main>
