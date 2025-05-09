@@ -1,16 +1,21 @@
 <script>
 	import Section from '$lib/features/landing/components/PageSection.svelte';
+	import { t } from 'svelte-i18n';
 	import Marquee from '../components/Marquee.svelte';
 	import PlatformText from '../components/PlatformText.svelte';
 </script>
 
 <Section id="landing">
-	<h1
-		class="from-secondary to-primary w-full bg-linear-to-r bg-clip-text px-8 text-center text-transparent md:px-12 lg:px-36"
-	>
-		Tous vos contenus,<br />
-		sur tous vos appareils.
-	</h1>
+	<div class="flex w-full flex-col gap-2 px-8 text-center">
+		<h1 class="from-secondary to-primary bg-linear-to-r bg-clip-text text-transparent">
+			Tous vos contenus,<br />
+			sur tous vos appareils.
+		</h1>
+
+		<p class="text-sm font-bold text-gray-500 sm:text-left md:text-center md:text-base">
+			{$t('legal_prevention')}
+		</p>
+	</div>
 
 	<div class="flex w-full max-w-md gap-4 text-center text-white">
 		<a

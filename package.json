@@ -36,6 +36,7 @@
 	"dependencies": {
 		"@supabase/ssr": "^0.5.2",
 		"@supabase/supabase-js": "^2.46.2",
-		"stripe": "^18.1.0"
+		"stripe": "^18.1.0",
+		"svelte-i18n": "^4.0.1"
 	}
 }

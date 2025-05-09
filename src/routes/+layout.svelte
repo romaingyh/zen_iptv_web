@@ -2,14 +2,21 @@
 <script lang="ts">
 	import '../app.css';
 
-	import { goto, invalidate } from '$app/navigation';
-	import { onMount } from 'svelte';
+	import { invalidate } from '$app/navigation';
+	import '$lib/i18n/i18n';
 	import Navbar from '$lib/shared/components/Navbar.svelte';
+	import { onMount } from 'svelte';
+	import { locale } from 'svelte-i18n';
 
 	export let data;
 
 	let { supabase, session } = data;
 	$: ({ supabase, session } = data);
+
+	// Set the locale based on data from +layout.ts
+	$: if (data?.locale) {
+		locale.set(data.locale);
+	}
 
 	onMount(() => {
 		const { data } = supabase.auth.onAuthStateChange((event, newSession) => {
