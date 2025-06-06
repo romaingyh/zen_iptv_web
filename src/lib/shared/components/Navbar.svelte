@@ -10,7 +10,7 @@
 		<img alt="logo" class="h-8" src="/icons/zen_iptv.svg" />
 		<div class="flex gap-0.5 text-lg font-bold">
 			<h6 class="text-primary">ZEN</h6>
-			<h6>IPTV</h6>
+			<h6>PLAYER</h6>
 		</div>
 	</a>
 
