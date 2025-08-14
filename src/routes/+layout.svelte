@@ -37,3 +37,10 @@
 <Navbar {session} />
 
 <slot />
+
+<footer class="border-t border-gray-200 p-2 text-gray-600 md:p-4">
+	<div class="container mx-auto flex justify-center space-x-4">
+		<a href="https://zeniptv.app/privacy_policy.html" class="hover:underline">Privacy Policy</a>
+		<a href="https://zeniptv.app/cgu.html" class="hover:underline">Terms and Conditions</a>
+	</div>
+</footer>
