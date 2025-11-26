@@ -4,6 +4,18 @@ import { createServerClient } from '@supabase/ssr';
 import type { Handle } from '@sveltejs/kit';
 
 export const handle: Handle = async ({ event, resolve }) => {
+	// Temporary fix: redirect double slash URLs (e.g., //help) to single slash
+	// This handles a mobile app bug where support URL was set to https://mydomain//help
+	if (event.url.pathname.startsWith('//')) {
+		const normalizedPath = event.url.pathname.replace(/^\/+/, '/');
+		return new Response(null, {
+			status: 301,
+			headers: {
+				location: normalizedPath + event.url.search
+			}
+		});
+	}
+
 	event.locals.supabase = createServerClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY, {
 		cookies: {
 			getAll: () => event.cookies.getAll(),
