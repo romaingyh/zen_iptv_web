@@ -43,8 +43,16 @@
 	{/if}
 
 	{#if subscription.managementUrl}
-		<FilledButton fullWidth variant="ghost" href={subscription.managementUrl}>
-			Gérer sur {subscription.store}
-		</FilledButton>
+		{#if subscription.store === 'stripe'}
+			<form action="?/manageSubscription" method="POST">
+				<FilledButton fullWidth variant="ghost" type="submit">
+					Gérer sur {subscription.store}
+				</FilledButton>
+			</form>
+		{:else}
+			<FilledButton fullWidth variant="ghost" href={subscription.managementUrl}>
+				Gérer sur {subscription.store}
+			</FilledButton>
+		{/if}
 	{/if}
 </div>
