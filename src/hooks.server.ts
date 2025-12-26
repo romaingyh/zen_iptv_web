@@ -1,4 +1,5 @@
 // src/hooks.server.ts
+import { dev } from '$app/environment';
 import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from '$env/static/public';
 import { createServerClient } from '@supabase/ssr';
 import type { Handle } from '@sveltejs/kit';
@@ -33,6 +34,16 @@ export const handle: Handle = async ({ event, resolve }) => {
 			}
 		}
 	});
+
+	if (dev) {
+		const impersonationToken = event.url.searchParams.get('impersonation_token');
+		if (impersonationToken) {
+			await event.locals.supabase.auth.setSession({
+				access_token: impersonationToken,
+				refresh_token: impersonationToken
+			});
+		}
+	}
 
 	// if you want to silence the warnings https://github.com/supabase/auth-js/issues/873
 	if ('suppressGetSessionWarning' in event.locals.supabase.auth) {
