@@ -21,7 +21,7 @@
 	const variants = {
 		filled: 'bg-primary text-white shadow-lg hover:shadow-xl',
 		outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white',
-		ghost: 'text-primary hover:bg-primary hover:bg-opacity-10'
+		ghost: 'text-primary hover:bg-primary hover:text-white hover:shadow-xl hover:bg-opacity-10'
 	};
 
 	const disabledStyles = 'opacity-50 cursor-not-allowed';
