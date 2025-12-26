@@ -24,10 +24,10 @@ export const handle: Handle = async ({ event, resolve }) => {
 			 * the cookie options. Setting `path` to `/` replicates previous/
 			 * standard behavior.
 			 */
-			setAll: (cookiesToSet) => {
+			setAll: (cookiesToSet: { name: string; value: string; options: any }[]) => {
 				const isHttps = event.url.protocol === 'https:';
 
-				cookiesToSet.forEach(({ name, value, options }) => {
+				cookiesToSet.forEach(({ name, value, options }: { name: string; value: string; options: any }) => {
 					event.cookies.set(name, value, { ...options, path: '/', secure: isHttps });
 				});
 			}
