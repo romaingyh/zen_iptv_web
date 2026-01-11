@@ -25,7 +25,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	try {
-		const event = stripe.webhooks.constructEvent(body, signature, STRIPE_WEBHOOK_SECRET);
+		const event = await stripe.webhooks.constructEventAsync(body, signature, STRIPE_WEBHOOK_SECRET);
 
 		switch (event.type) {
 			case 'checkout.session.completed': {
