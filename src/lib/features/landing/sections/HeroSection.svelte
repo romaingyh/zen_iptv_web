@@ -55,7 +55,7 @@
 		<img
 			alt="Home iPhone"
 			class="absolute right-0 bottom-0 h-3/4 rounded-xl shadow-2xl"
-			src="/images/movies.webp"
+			src="/images/series.webp"
 		/>
 	</div>
 
@@ -65,7 +65,7 @@
 			<div class="w-6"></div>
 			<img alt="Home large" class="h-[400px] rounded-xl" src="/images/large_home.webp" />
 			<div class="w-6"></div>
-			<img alt="Home iPhone" class="h-[400px] rounded-xl" src="/images/movies.webp" />
+			<img alt="Home iPhone" class="h-[400px] rounded-xl" src="/images/series.webp" />
 			<div class="w-6"></div>
 		</Marquee>
 	</div>

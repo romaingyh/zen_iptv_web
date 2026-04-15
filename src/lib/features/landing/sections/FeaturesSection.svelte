@@ -1,6 +1,6 @@
 <script>
-	import Section from '../components/PageSection.svelte';
 	import FeatureBlock from '../components/FeatureBlock.svelte';
+	import Section from '../components/PageSection.svelte';
 </script>
 
 <Section id="features">
@@ -35,7 +35,7 @@
 	</FeatureBlock>
 
 	<FeatureBlock
-		description="Vous n'avez jamais vu une application de lecture IPTV aussi soignée et claire."
+		description="Vous n'avez jamais vu une application de lecture IPTV aussi soignée et claire. (Mockup illustratif avec données de TMDB)"
 		title="Design"
 	>
 		<img alt="Design" class="max-h-[500px] rounded-xl shadow-2xl" src="/images/serie_2.webp" />
