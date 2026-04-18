@@ -112,6 +112,7 @@ h5 {
 	@apply text-lg font-bold md:text-xl lg:text-2xl;
 }
 
-p {
+p,
+li {
 	@apply text-base text-gray-400 md:text-lg;
 }

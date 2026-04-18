@@ -7,13 +7,10 @@
 		isOpen = !isOpen;
 	}
 
-	export let title: string = 'Hello World';
-	export let content: string =
-		'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate?';
+	export let title: string;
+	export let content: string = '';
 
-	const arr = content.split(/\n|\r\n/g).map((v, _) => {
-		return { text: v, br: '<br>' };
-	});
+	$: lines = content ? content.split(/\n|\r\n/g) : [];
 </script>
 
 <div class="accordion min-w-full">
@@ -41,10 +38,13 @@
 
 	{#if isOpen}
 		<div class="pr-5 pb-5 pl-12" transition:slide>
-			{#each arr as { text, br }}
-				{text}
-				{@html br}
-			{/each}
+			{#if $$slots.default}
+				<slot />
+			{:else}
+				{#each lines as line, i (i)}
+					{line}<br />
+				{/each}
+			{/if}
 		</div>
 	{/if}
 </div>
