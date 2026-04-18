@@ -93,6 +93,15 @@
 				</div>
 
 				<div class="flex flex-col gap-3 p-6 md:p-8">
+					<h4>Erreur lors de l'installation ?</h4>
+					<p>
+						Il est possible de rencontrer une erreur du type "Invalide", "Signature", "Analyse"...
+						si vous avez la version du Play Store encore installée. Dans ce cas, désinstallez là
+						d'abord puis réessayez.
+					</p>
+				</div>
+
+				<div class="flex flex-col gap-3 p-6 md:p-8">
 					<h4 class="text-red-500">Important</h4>
 					<p>
 						Utilisez uniquement le lien officiel ci-dessus. Cette page sera mise à jour dès que la
