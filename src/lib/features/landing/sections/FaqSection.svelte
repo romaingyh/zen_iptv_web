@@ -14,7 +14,7 @@
 		<HorizontalDivider />
 
 		<FaqItem
-			content="Oui Zen IPTV est disponible au téléchargement ! Rendez-vous en haut de cette page pour télécharger l'application sur votre appareil."
+			content="Oui. L'application reste disponible sur l'App Store pour les appareils Apple et via APK pour Android, Android TV et Fire TV. Rendez-vous en haut de cette page pour choisir la bonne méthode d'installation."
 			title="Est-ce que l'application est disponible ?"
 		/>
 
@@ -23,8 +23,7 @@
 		<FaqItem
 			content="Voici les plateformes sur les quelles vous pouvez télécharger Zen IPTV :
                 - iOS (App Store), iPadOS (App Store), macOS (App Store), tvOS (App Store)
-                - Android (Play Store) et Android TV (Play Store)
-                - FireStick, https://zeniptv.app/releases/zeniptv_fireos.apk
+                - Android, Android TV et Fire TV via APK : https://zeniptv.app/releases/zenplayer.apk
                 - Windows (Windows Store)
 
                 Ces plateformes ne sont pas supportées pour le moment :

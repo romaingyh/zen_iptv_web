@@ -31,13 +31,16 @@
 
 		<a
 			class="flex-1"
-			href="http://play.google.com/store/apps/details?id=app.zeniptv.mobile&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+			href="/android"
 		>
-			<img
-				alt="Disponible sur Google Play"
-				class="h-full w-full"
-				src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
-			/>
+			<div
+				class="flex h-full w-full items-center justify-center gap-4 rounded-xl bg-neutral-950 px-4 text-left shadow-lg"
+			>
+				<img alt="Android" class="h-10 w-10" src="/icons/android-white.svg" />
+				<span class="text-xl font-bold text-white">
+					Android <br /> Fire TV
+				</span>
+			</div>
 		</a>
 	</div>
 
